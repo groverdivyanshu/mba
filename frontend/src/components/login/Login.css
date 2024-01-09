@@ -1,0 +1,74 @@
+
+
+
+.login {
+  height: 100vh;
+  background-image: linear-gradient(to right, #b38ed3, #ca5586);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+.loginForm {
+  background-color: rgb(200, 219, 216);
+  height: 100%;
+  width: 50%;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginForm > button {
+  padding: 10px 20px; /* Adjust padding to your preference */
+  background-color: #9f6640; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Mouse pointer on hover */
+  font-size: 16px; /* Font size */
+}
+
+.loginForm > button:hover {
+  background-color: #ff6600; /* Green background */
+  ; /* Darker shade of green for hover effect */
+}
+
+.loginForm > input {
+  box-sizing: border-box;
+  padding: 1vmax 2vmax;
+  width: 80%;
+  border-radius: 40px;
+  border: 1px solid #8800ff;
+  margin: 2vmax;
+  font: 100 1.2rem "Roboto", sans-serif;
+  outline: none;
+}
+.loginForm > a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: rgb(239, 7, 7);
+  margin: 2vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .loginForm {
+    width: 100%;
+  }
+
+  .loginForm > input {
+    padding: 4vw 8vw;
+    margin: 2vmax;
+    font: 100 1.2rem "Roboto", sans-serif;
+    margin: 4vw;
+  }
+
+  .loginForm > a {
+    align-self: center;
+  }
+}
