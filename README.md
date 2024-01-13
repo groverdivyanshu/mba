@@ -20,9 +20,9 @@
 # DEMO ADMIN DATA 
 --  ADMIN 1
 -  Email
--  ```  ```
+-  ``` bireswarghosh770@gmail.com ```
 -  password
--  ```  ```
+-  ``` Burger King ```
 
 
 ## About
