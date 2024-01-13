@@ -7,14 +7,14 @@
 ### DEMO USER DATA 
 -  user 1
 -  Email
--  ```  ```
+-  ``` RUDRAKSH05@gmail.com ```
 -  password
--  ```  ```
+-  ```12345678  ```
 -  -  user 2
 -  Email
--  ```  ```
+-  ```rudra123@gmail.com  ```
 -  password
--  ```  ```
+-  ```rudra123  ```
 
 
 # DEMO ADMIN DATA 
