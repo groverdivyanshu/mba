@@ -70,7 +70,7 @@ npm install npm@latest -g
 
 ## Installation
 1. Clone the repo
-```git clone (https://github.com/bireswarghosh/BURGER-KING.git)```
+```git clone [https://github.com/bireswarghosh/BURGER-KING.git]```
 
 
 
