@@ -1,17 +1,115 @@
-Burger King 
+
+# Burger King
+
+## Live Demo
+[Burger King App](https://burger-king-pp7w.onrender.com)
+
+### DEMO USER DATA 
+-  user 1
+-  Email
+-  ```  ```
+-  password
+-  ```  ```
+-  -  user 2
+-  Email
+-  ```  ```
+-  password
+-  ```  ```
 
 
-GitHub link : https://github.com/bireswarghosh/BURGER-KING
+# DEMO ADMIN DATA 
+--  ADMIN 1
+-  Email
+-  ```  ```
+-  password
+-  ```  ```
 
 
-Deploy link : 
-https://burger-king-pp7w.onrender.com/
+## About
+Burger King is an online platform where users can order their favorite burgers and pay online or choose cash on delivery. The app provides an admin panel for administrators to monitor user activities and manage orders.
+
+## Features
+
+### User Features:
+- User registration and login
+- Option to buy burgers with Cash on Delivery (COD) or online payment
+- Ability to add and change the shipping address
+
+### Admin Features:
+- Admin registration and login
+- Dashboard to view total earnings, user list, and user activities
+- Update and manage user order statuses
+
+## Tech Stack
+- MongoDB
+- Express.js
+- React.js
+- Node.js
+- Redux
+- Cloudinary
+- Nodemailer
+- SCSS
+- JWT (JSON Web Tokens)
+- CORS (Cross-Origin Resource Sharing)
+- OAuth 2.0
+- Razorpay
+- Passport.js
+- bcrypt
+- REST API
+- Git and GitHub
+
+## Getting Started
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+- Node.js
+- npm
+
+npm install npm@latest -g
 
 
-About : this is a burger app hear user buy burger online , and admin see all user activities.
+## Installation
+1. Clone the repo
+```git clone https://github.com/your_username_/Project-Name.git```
 
- Tech stacks : MongoDB, Express, React.js, Node.js , Redux,  Cloudinary,  Nodemailer,  Scss,  Jwt .
 
-User Ficher : register or login , to buy burger via COD OR ONLINE pay. 
 
-Admin Ficher : registration or login. admin panel have dashboard where admin get all data of user like total amount, all user and every user activity .
+
+2. Install NPM packages
+
+```npm install```
+
+
+3. Start the server
+
+
+```npm start```
+
+
+### Usage
+After installation, users can register or log in to start ordering burgers. Admins can log in through the admin panel to access the dashboard for user activity and order management.
+
+
+
+###License
+This project is licensed under the ISC License.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
