@@ -91,7 +91,7 @@ After installation, users can register or log in to start ordering burgers. Admi
 
 
 
-###License
+### License
 This project is licensed under the ISC License.
 
 
