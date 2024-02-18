@@ -12,4 +12,3 @@ class ErrorHandler extends Error {
 
 export default ErrorHandler;
 
-// in summery --> hear to receive err massage by using super() . and receive statusCode by using this.statusCode . massage already exist . but  statusCode like 401  not exit so put statusCode and receive this code use this.statusCode 
