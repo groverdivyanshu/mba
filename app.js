@@ -8,7 +8,7 @@ import session from "express-session";
 import cookieParser from "cookie-parser";
 // import passport from "passport";
 import { errorMiddleware } from "./middlewares/errorMiddleware.js";
-import cors from "cors";
+// import cors from "cors";
 
 // use express and export default
 const app = express();
@@ -53,10 +53,10 @@ app.use(
 //   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 //   next();
 // });
-app.use(cors({
-  origin: 'http://localhost:3000',
-  credentials: true,
-}));
+// app.use(cors({
+//   origin: 'http://localhost:3000',
+//   credentials: true,
+// }));
 
 // in whole app anywhere i can not use passport package   so use hear .          make sure use of this line after creating session  mean 21 - 26   .   It initializes passport, sets up session support, and authenticates the session
 // app.use(passport.authenticate("session"));
