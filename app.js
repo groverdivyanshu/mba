@@ -48,11 +48,15 @@ app.use(
 //     methods: ["GET", "POST", "PUT", "DELETE"], // how meany method will be work add them 
 //   })
 // );
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true,
+}));
 
 // in whole app anywhere i can not use passport package   so use hear .          make sure use of this line after creating session  mean 21 - 26   .   It initializes passport, sets up session support, and authenticates the session
 // app.use(passport.authenticate("session"));
