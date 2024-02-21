@@ -8,7 +8,7 @@ import session from "express-session";
 import cookieParser from "cookie-parser";
 // import passport from "passport";
 import { errorMiddleware } from "./middlewares/errorMiddleware.js";
-// import cors from "cors";
+import cors from "cors";
 
 // use express and export default
 const app = express();
@@ -40,14 +40,14 @@ app.use(
   })
 );
 
-// app.use(
-//   cors({
-//     credentials: true, // make sura it will be true otherwise cookie and meany more thing are not send 
-//     origin:'http://localhost:3000',
-//     //process.env.FRONTEND_URL, // add FRONTEND_URL
-//     methods: ["GET", "POST", "PUT", "DELETE"], // how meany method will be work add them 
-//   })
-// );
+app.use(
+  cors({
+    credentials: true, // make sura it will be true otherwise cookie and meany more thing are not send 
+    origin:'http://localhost:3000',
+    //process.env.FRONTEND_URL, // add FRONTEND_URL
+    methods: ["GET", "POST", "PUT", "DELETE"], // how meany method will be work add them 
+  })
+);
 // app.use(function(req, res, next) {
 //   res.header("Access-Control-Allow-Origin", "*");
 //   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
