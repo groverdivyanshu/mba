@@ -97,7 +97,7 @@ router.get("/admin/stats", isAuthenticated, authorizeAdmin, getAdminStats);
 
 
 
-router.post("/contact",contact);
+// router.post("/contact",contact);
 
 
 export default router;
