@@ -1,9 +1,9 @@
 import { asyncError } from "../middlewares/errorMiddleware.js";
 import { User } from "../models/User.js";
 import { Order } from "../models/Order.js";
-import { sendMail } from "../middlewares/sendMail.js";
+// import { sendMail } from "../middlewares/sendMail.js";
 // import crypto from 'crypto';
-import cloudinary from 'cloudinary';
+// import cloudinary from 'cloudinary';
 
 
 
@@ -25,16 +25,16 @@ export const register = async (req, res) => {
     //     .json({ success: false, message: "User  email already exists massage come from backend crontroller" });
     // }
 
-    const myCloud = await cloudinary.v2.uploader.upload(avatar, {
-      folder: "avatars",
-    });
+    // const myCloud = await cloudinary.v2.uploader.upload(avatar, {
+    //   folder: "avatars",
+    // });
 
-    user = await User.create({
-      name,
-      email,
-      password,
-      avatar: { public_id: myCloud.public_id, url: myCloud.secure_url },
-    });
+    // user = await User.create({
+    //   name,
+    //   email,
+    //   password,
+    //   avatar: { public_id: myCloud.public_id, url: myCloud.secure_url },
+    // });
 
     const token = await user.generateToken();
 
@@ -202,23 +202,23 @@ export const getAdminStats = asyncError(async (req, res, next) => {
 
 
 
-export const contact = async (req, res) => {
-  try {
-    const { name, email, message } = req.body;
+// export const contact = async (req, res) => {
+//   try {
+//     const { name, email, message } = req.body;
 
-    const userMessage = `Hey, I am ${name}. My email is ${email}. My message is ${message}.`;
+//     const userMessage = `Hey, I am ${name}. My email is ${email}. My message is ${message}.`;
 
-    await sendMail(userMessage);
+//     await sendMail(userMessage);
 
-    return res.status(200).json({
-      success: true,
-      message: "Message Sent Successfully",
-    });
-  } catch (error) {
-    return res.status(400).json({
-      success: false,
-      message: error.message,
-    });
-  }
-};
+//     return res.status(200).json({
+//       success: true,
+//       message: "Message Sent Successfully",
+//     });
+//   } catch (error) {
+//     return res.status(400).json({
+//       success: false,
+//       message: error.message,
+//     });
+//   }
+// };
 
