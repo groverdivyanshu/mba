@@ -9,7 +9,7 @@ import {
   register, 
   login,
    logout,
-  contact,
+  // contact,
 } from "../controllers/user.js";
 import { authorizeAdmin, isAuthenticated } from "../middlewares/auth.js"; 
 
